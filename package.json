@@ -1,0 +1,56 @@
+{
+  "name": "@1inch/erc20-pods",
+  "version": "0.0.17",
+  "description": "ERC20 extension enabling external smart contract based Pods to track balances of those users who opted-in to these Pods",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:1inch/erc20-pods.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1inch/erc20-pods/issues"
+  },
+  "homepage": "https://github.com/1inch/erc20-pods#readme",
+  "author": "1inch",
+  "license": "MIT",
+  "dependencies": {
+    "@1inch/solidity-utils": "2.2.21",
+    "@openzeppelin/contracts": "4.8.2"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "1.0.6",
+    "@nomiclabs/hardhat-ethers": "2.2.2",
+    "@nomiclabs/hardhat-etherscan": "3.1.7",
+    "@openzeppelin/test-helpers": "0.5.16",
+    "chai": "4.3.7",
+    "dotenv": "16.0.3",
+    "eslint": "8.36.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "15.6.1",
+    "eslint-plugin-promise": "6.1.1",
+    "ethers": "5.7.2",
+    "hardhat": "2.13.0",
+    "hardhat-deploy": "0.11.25",
+    "hardhat-gas-reporter": "1.0.9",
+    "rimraf": "4.4.0",
+    "solhint": "3.4.1",
+    "solidity-coverage": "0.8.2"
+  },
+  "scripts": {
+    "clean": "rimraf artifacts cache coverage coverage.json contracts/hardhat-dependency-compiler",
+    "coverage": "hardhat coverage",
+    "deploy": "hardhat deploy --network",
+    "lint": "yarn run lint:js && yarn run lint:sol",
+    "lint:fix": "yarn run lint:js:fix && yarn run lint:sol:fix",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix",
+    "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
+    "lint:sol:fix": "solhint --max-warnings 0 \"contracts/**/*.sol\" --fix",
+    "test": "hardhat test --parallel",
+    "test:ci": "hardhat test"
+  },
+  "files": [
+    "contracts",
+    "test/behaviors/*.js"
+  ]
+}
