@@ -3,7 +3,7 @@
 pragma solidity ^0.8.0;
 
 import { IERC20, ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import { AddressSet, AddressArray } from "@1inch/solidity-utils/contracts/libraries/AddressSet.sol";
+import { AddressSet, AddressArray } from "@deta/solidity-utils/contracts/libraries/AddressSet.sol";
 
 import { IERC20Pods } from "./interfaces/IERC20Pods.sol";
 import { IPod } from "./interfaces/IPod.sol";

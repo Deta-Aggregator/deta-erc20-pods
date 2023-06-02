@@ -1,19 +1,19 @@
 {
-  "name": "@1inch/erc20-pods",
+  "name": "@deta/erc20-pods",
   "version": "0.0.17",
   "description": "ERC20 extension enabling external smart contract based Pods to track balances of those users who opted-in to these Pods",
   "repository": {
     "type": "git",
-    "url": "git@github.com:1inch/erc20-pods.git"
+    "url": "git@github.com:deta/erc20-pods.git"
   },
   "bugs": {
-    "url": "https://github.com/1inch/erc20-pods/issues"
+    "url": "https://github.com/deta/erc20-pods/issues"
   },
-  "homepage": "https://github.com/1inch/erc20-pods#readme",
-  "author": "1inch",
+  "homepage": "https://github.com/deta/erc20-pods#readme",
+  "author": "deta",
   "license": "MIT",
   "dependencies": {
-    "@1inch/solidity-utils": "2.2.21",
+    "@deta/solidity-utils": "2.2.21",
     "@openzeppelin/contracts": "4.8.2"
   },
   "devDependencies": {
